@@ -6,138 +6,562 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" href="favicon-ttn.ico" type="image/x-icon"/>
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
-
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/customize.css">
     <!-- Optional Bootstrap theme goes down-->
-    
 
 </head>
-<body style="background:#f1f4f5">
-    
+<body style="background:#e2e2e2">
+    <nav class="navbar" style="background:#fff">
+  		<div class="container-fluid">
+    		<div class="navbar-header" style="padding:0px 0px 10px 20px">
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span> 
+      			</button>
+      			</span><a class="navbar-brand" href="#" ><img src="bootstrap/logo/reaplogo.png" style="height:35px; align:center"></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+			    <ul class="nav navbar-nav visible-lg">
+			      	<li class="active" style="line-height:50px"><img src="bootstrap/logo/mainheader.png" style="height:35px;"></li>
+			    </ul>
+			    <ul class="nav navbar-nav navbar-right">
+			      	<li class="active"><a href="#"><span id="navtxt"><span class="glyphicon glyphicon-user"></span> Dashboard</span></a></li>
+			      	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Badges</a></li>
+			      	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Certificate</a></li>
+			      	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Idea</a></li>
+			      	<li><a href="#"><span class="glyphicon glyphicon-user"></span> Notification</a></li>
+			      	<li><a href="#"><span class="glyphicon glyphicon-user"></span> User</a></li>
+			    </ul>
+			</div>
+  		</div>
+	</nav>
+
+
+
     <div class="content-fluid">
-    	<div id="primewrapper" style="margin:2% 3%">
+    	<div id="primewrapper">
 			<div class="row">
-			    <div class="col-sm-9">
-			    	<div class="panel panel-default">
-				  		<div class="panel-heading" style="background:#ea8744; border:1px solid #ea8744; line-height:14px" >
-				  			<img src="bootstrap/icons/badgewhite.png" alt="white badge"/>&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#fff">RECOGNIZE KARMA</b>
-				  		</div>
+			    <div class="col-sm-9" style="margin-bottom:4%">
+
+			    	<div class="row">
+			    		<div class="col-sm-12">
+			    			<div class="panel panel-default">
+				  				<div class="panel-heading" id="recog-heading" >
+				  					<img src="bootstrap/icons/badgewhite.png" alt="white badge"/>&nbsp;&nbsp;&nbsp;&nbsp;<b>RECOGNIZE KARMA</b>
+				  				</div>
 				  	
 				
-					  	<div class="panel-body" >
-					  		<form role="form">
-					  			<div class="row">
-							  		<div class="form-group">
-							  			<div class="col-sm-6">
-							  				<div class="input-group">
-	                   							<span class="input-group-addon" >
-	                   								<span class="glyphicon glyphicon-user"></span>
-	                   							</span>
-								  				<input type="text" name="User" class="form-control"  placeholder="Select a newer" />
-								  			</div>
-							  			</div>
+					  			<div class="panel-body" >
+							  		<form role="form" action="index.html" method="GET">
+							  			<div class="row" style="padding-left:1%; padding:1%">
+									  		<div class="form-group">
+									  			<div class="col-sm-6">
+									  				<div class="input-group">
+			                   							<span class="input-group-addon" >
+			                   								<span class="glyphicon glyphicon-user"></span>
+			                   							</span>
+										  				<input type="text" name="user" class="form-control" id="newer-txtbx" placeholder="Select a newer"/>
+										  			</div>
+									  			</div>
 
-							  			<div class="col-sm-3">
-							  				<div class="dropdown">
-											    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100%">
-											    	<span style="float:left">Select a badge</span>  <span class="caret" style="float:right; margin-top:9px"</span>
-											    </button>
-											    	<ul class="dropdown-menu" role="menu" style="width:100%; float:right; margin-right: 15px; margin-left:0px;">
-												    	<li role="presentation" style="border-bottom:1px solid #e5e5e5">
-												    		<img src="bootstrap/badges/gold.png" alt="Golden badge" style="padding-left: 5px;"/>
-												    		<span style="line-height:30px; margin:8px 0px 0px 8px;">
-												    		<a role="menuitem" href="#" class="selectbadge" style="text-decoration:none; color:#000">Gold</a></span>
-												    	</li>
-												      	<li role="presentation" style="border-bottom:1px solid #e5e5e5">
-												      		<img src="bootstrap/badges/silver.png" alt="silver badge" style="padding-left: 5px;"/>
-												      		<span style="line-height:30px; margin:8px 0px 0px 8px;">
-												      		<a role="menuitem" href="#" class="selectbadge" style="text-decoration:none; color:#000">Silver</a></span>
-												      	</li>
-												      	<li role="presentation" style="border-bottom:1px solid #e5e5e5">
-												      		<img src="bootstrap/badges/bronze.png" alt="silver badge" style="padding-left: 5px;"/>
-												      		<span style="line-height:30px; margin:8px 0px 0px 8px;">
-												      		<a role="menuitem" href="#" class="selectbadge" style="text-decoration:none; color:#000">Bronze</a></span>
-												      	</li>
-											    	</ul>
-											  </div>
-							  			</div>
-
-							  			<div class="col-sm-3">
-							  				<div class="row">
-							  					<div class="col-sm-12">
+									  			<div class="col-sm-3">
 									  				<div class="dropdown">
-													    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown" style="width:100%">
-													    	<span style="float:left">Select a karma</span>  <span class="caret" style="float:right; margin-top:9px"</span>
+													    <button class="btn btn-default dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">
+													    	<span class="recog-menu-button">Select a Badge</span>
+													    	<span class="caret recog-menu-caret"</span>
 													    </button>
-													    
-												    	<ul class="dropdown-menu" role="menu" style="width:100%; float:right; margin-right: 15px; margin-left:0px;">
-													    	<li role="presentation" style="border-bottom:1px solid #e5e5e5">
-													    		<span style="line-height:30px; margin:8px 0px 0px 8px;">
-													    			<a role="menuitem" href="#" style="text-decoration:none; color:#000">Extra Miler</a>
-													    		</span>
+												    	<ul class="dropdown-menu recog-menu" role="menu">
+													    	<li role="presentation">
+													    		<img src="bootstrap/badges/gold.png" alt="Golden badge" />
+													    		<span>
+													    		<a role="menuitem" href="#" class="selectbadge">Gold</a></span>
 													    	</li>
-													      	<li role="presentation" style="border-bottom:1px solid #e5e5e5">
-													      		<span style="line-height:30px; margin:8px 0px 0px 8px;">
-														      		<a role="menuitem" href="#" style="text-decoration:none; color:#000">Knowledge Sharing</a>
-														      	</span>
-														    </li>
-													      	<li role="presentation" style="border-bottom:1px solid #e5e5e5">
-													      		<span style="line-height:30px; margin:8px 0px 0px 8px;">
-														      		<a role="menuitem" href="#" style="text-decoration:none; color:#000">Mentorship</a>
-														      	</span>
-														    </li>
-													      	<li role="presentation" style="border-bottom:1px solid #e5e5e5">
-													      		<span style="line-height:30px; margin:8px 0px 0px 8px;">
-													      			<a role="menuitem" href="#" style="text-decoration:none; color:#000">Pat on the back</a>
+													      	<li role="presentation">
+													      		<img src="bootstrap/badges/silver.png" alt="silver badge" />
+													      		<span>
+													      		<a role="menuitem" href="#" class="selectbadge">Silver</a>
 													      		</span>
 													      	</li>
-													      	<li role="presentation" style="border-bottom:1px solid #e5e5e5">
-													      		<span style="line-height:30px; margin:8px 0px 0px 8px;">
-													      			<a role="menuitem" href="#" style="text-decoration:none; color:#000">Customer delight</a>
-													      		</span>
+													      	<li role="presentation">
+													      		<img src="bootstrap/badges/bronze.png" alt="silver badge" />
+													      		<span>
+													      		<a role="menuitem" href="#" class="selectbadge">Bronze</a></span>
 													      	</li>
 												    	</ul>
 													</div>
-												</div>
-											</div>
+									  			</div>
 
+									  			<div class="col-sm-3">
+									  				<div class="row">
+									  					<div class="col-sm-12">
+											  				<div class="dropdown">
+															    <button class="btn btn-default dropdown-toggle" type="button" id="menu2" data-toggle="dropdown">
+															    	<span class="recog-menu-button">Select a Karma</span>
+															    	<span class="caret recog-menu-caret"></span>
+															    </button>
+															    
+														    	<ul class="dropdown-menu recog-menu" role="menu" >
+															    	<li role="presentation">
+															    		<span>
+															    		<a role="menuitem" href="#" class="extramiler">Extra Miler</a>
+															    		</span>
+															    	</li>
+															      	<li role="presentation">
+															      		<span>
+																      		<a role="menuitem" href="#" class="knowledgesharing">Knowledge Sharing</a>
+																      	</span>
+																    </li>
+															      	<li role="presentation">
+															      		<span>
+																      		<a role="menuitem" href="#" class="mentorship">Mentorship</a>
+																      	</span>
+																    </li>
+															      	<li role="presentation">
+															      		<span>
+															      			<a role="menuitem" href="#" class="patonback">Pat on the back</a>
+															      		</span>
+															      	</li>
+															      	<li role="presentation">
+															      		<span>
+															      			<a role="menuitem" href="#" class="customer">Customer delight</a>
+															      		</span>
+															      	</li>
+														    	</ul>
+															</div>
+														</div>
+													</div>
+
+									  			</div>
+									  		</div>
+									  	</div>
+										<br/>
+								  		<div class="row">
+								  			<div class="col-sm-12">
+								  				<div class="form-group">
+		  											<label for="reason" id="reasonlbl">Reason:</label>
+		  											<textarea class="form-control" rows="5" id="reason" name="reason" placeholder="Please select a newer, badge to share and newer's karma..." disabled></textarea>
+												</div>
+								  			</div>
+								  		</div>
+								  	</div>
+								  	<!--/form    form will not end here. It'll end after footer button-->
+							  	<div class="panel-footer">
+							  		<div class="row">
+							  			<div class="col-sm-12">
+							  				<button type="submit" class="btn btn-primary recogbt">Recognize</button>
 							  			</div>
 							  		</div>
 							  	</div>
-								<br/>
-						  		<div class="row">
-						  			<div class="col-sm-12">
-						  				<div class="form-group">
-  											<label for="comment">Reason:</label>
-  											<textarea class="form-control" rows="5" id="comment" placeholder="Please select a karma first" style="resize:none"></textarea>
-										</div>
-						  			</div>
-						  		</div>
-						  	</div>
-						  	<!--/form    form will not end here. It'll end after footer button-->
-					  	<div class="panel-footer">
-					  		<div class="row">
-					  			<div class="col-sm-12">
-					  				<button type="button" class="btn btn-primary" style="background-color:#505b72; line-height:17px; width:110px; border:1px solid #5e697e">Recognize</button>
+							  		</form> <!--Form ends here-->
+							</div>
+			    		</div><!--Recognize panel done-->
+			    	</div>
+
+			    	<div class="row">
+			    		<div class="col-sm-12">
+
+			    			<div class="wall-header" style="">
+					    	<div class="row">
+					    		<div class="col-sm-3">
+					    			<img src="bootstrap/icons/walloffamewhite.png" alt="wall of fame icon"/>&nbsp;&nbsp;&nbsp;<span style="" class="wall-fame-title"><b>WALL OF FAME</b></span>
+					    		</div>
+
+					    		<div class="col-sm-3">
+					    			<div class="form-group has-feedback">
+						    			<input class="form-control" type="text" name="search-fame" placeholder="Search">
+						    			<span class="glyphicon glyphicon-search form-control-feedback"></span>
+					    			</div>
+					    		</div>
+
+					    		<div class="col-sm-2">
+					    			<div class="dropdown">
+					    				<button class="btn btn-default dropdown-toggle wall-btn" type="button" data-toggle="dropdown" style=""><span class="btn-text" style="">Service Lines</span><span class="caret menu-wall-caret" style=""></span></button>
+
+					    				<ul class="dropdown-menu wall-menu list-menu" role="menu" >
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="analytics">
+									    		<span>Analytics</span>
+									    		</a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="analytics-sea"><span>Analytics-SEA</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="marketing">
+									    		<span>Digital Marketing</span>
+									    		</a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="marketingindia"><span>Digital Marketing India</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="marketingsea"><span>Digital Marketing SEA</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="technology"><span>Technology</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="thoughtbuzz"><span>ThoughtBuzz India</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="overheads"><span>TTN Overheads</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="interns"><span>TTN Interns</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="ttndsea"><span>TTND SEA</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="ttnv"><span>TTNV</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="videosol"><span>Video Solutions</span></a>
+									    	</li>
+					    				</ul>
+					    			</div>
+					    		</div>
+
+					    		<div class="col-sm-3">
+					    			<div class="dropdown">
+					    				<button class="btn btn-default dropdown-toggle wall-btn" type="button" data-toggle="dropdown" style=""><span class="btn-text">Practices</span><span class="caret menu-wall-caret"></span></button>
+
+					    				<ul class="dropdown-menu list-menu" role="menu">
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="admin"><span>Admin</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="amc"><span>AMC</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="analyticsprac"><span>Analytics</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="analyticsseaprac"><span>Analytics SEA</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="bigdataprac"><span>Big Data</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="blogmintprac"><span>BlogMint</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="businessdevprac"><span>Business Developer</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="creativeprac"><span>Creative</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="designprac"><span>Design</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="devopsprac"><span>DevOps</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="dmindcorpprac"><span>DM India Corporate</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="drupalprac"><span>Drupal</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="feenprac"><span>Feen</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="financeprac"><span>Finance</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="hrprac"><span>HR</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="internprac"><span>Intern</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="itprac"><span>IT</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="jvmprac"><span>JVM</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="managementprac"><span>Management</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="martechprac"><span>Martech</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="meanprac"><span>MEAN</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="mediapnbprac"><span>Media Planning and Buying</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="mobilityprac"><span>Mobility</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="salemarketprac"><span>Sales and Marketing</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="securityprac"><span>Security</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="ssseaprac"><span>Shared Sevrices-SEA</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="socialmedia"><span>Social Media</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="smmprac"><span>Social Media Marketing</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="smseaprac"><span>Social Media SEA</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="strategyprac"><span>Strategy</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="techcorpprac"><span>Technology Corporate</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="testing"><span>Testing</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="thoubuzzprac"><span>ThoughtBuzz India</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="ttnoverprac"><span>TTN Overheads</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="ttnvmanprac"><span>TTNV Management</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="vidcorpprac"><span>Video Corporate</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="vmsprac"><span>Video Managed Services</span></a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="vrprac"><span>Video Ready</span></a>
+									    	</li>
+					    				</ul>
+					    			</div>
+					    		</div>
+
+					    		<div class="col-sm-1">
+					    			<div class="dropdown">
+					    				<button class="btn btn-default dropdown-toggle wall-btn" type="button" data-toggle="dropdown" style=""><span class="glyphicon glyphicon-calender"></span></button>
+
+					    				<ul class="dropdown-menu wall-menu" role="menu" >
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="analytics">
+									    		<span>1 day ago</span>
+									    		</a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="analytics">
+									    		<span>2 days ago</span>
+									    		</a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="analytics">
+									    		<span>1 week ago</span>
+									    		</a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="analytics">
+									    		<span>1 month ago</span>
+									    		</a>
+									    	</li>
+									    	<li role="presentation">
+									    		<a role="menuitem" href="#" id="analytics">
+									    		<span>Custom</span>
+									    		</a>
+									    	</li>
+									    </ul>
+					    			</div>
+					    		</div>
+					    	</div>
+				    	</div>
+
+			    		</div>
+			    	</div>
+				</div>			
+			    <div class="col-sm-3">
+			    	<div class="row">
+			    		<div class="col-sm-12" style="padding: 0% 5.5%">
+			    			<div class="panel panel-default">
+				  				<div class="panel-heading" id="badges-heading" >
+				  					<img src="bootstrap/icons/badgewhite.png" alt="white badge"/>&nbsp;&nbsp;&nbsp;&nbsp;<b>MY BADGES</b>
+				  				</div>
+				
+					  			<div class="panel-body" >
+					  				<div class="row">
+					  					<div class="col-sm-4">
+					  						<img src="users/user126/ashishtomer" alt="user image" class="profile-pic"/>
+					  					</div>
+					  					<div class="col-sm-8">
+					  						<div class="row">
+					  							<div class="col-sm-12">
+						  							<a href="users/user126/index.html"><b>Ashish Tomer</b></a>
+						  						</div>
+											</div>
+					  						<div class="row">
+					  							<div class="col-sm-12">
+						  							<table class="table">
+						  								<thead>
+							  								<tr>
+							  									<th><img src="bootstrap/badges/gold.png" alt="gold badge"></th>
+							  									<th><img src="bootstrap/badges/silver.png" alt="gold badge"></th>
+							  									<th><img src="bootstrap/badges/bronze.png" alt="gold badge"></th>
+							  								</tr>
+						  								</thead>
+						  								<tbody>
+						  									<tr>
+						  										<td>1</td>
+						  										<td>1</td>
+						  										<td>2</td>
+						  									</tr>
+						  								</tbody>
+						  							</table>
+						  						</div>
+					  						</div>
+					  					</div>
+					  				</div>
 					  			</div>
 					  		</div>
 					  	</div>
-					  		</form>
 					</div>
-				</div>
-			
-			    <div class="col-sm-3">
-			    	<div class="well well-sm">
-					    <p>Something in col-xs-4</p>
+
+					<div class="row">
+						<div class="col-sm-12" style="padding: 0% 5.5%">
+							<ul class="nav	nav-tabs">
+								<li class="active nav-tab-li">
+									<a href="#newerboard" data-toggle="tab">NEWER BOARD</a>
+								</li>
+								<li class="nav-tab-li">
+									<a href="#ideas" data-toggle="tab">IDEAS</a>
+								</li>
+							</ul>
+							<div class="tab-content" style="padding: 0% 5.5%; background:white; border:1px solid #e2e2e2; margin-right:2px">
+								<div class="tab-pane active" id="newerboard">
+									<div class="row newer-row">
+					  					<div class="col-sm-4">
+					  						<img src="users/user126/ashishtomer" alt="user image" class="profile-pic"/>
+					  					</div>
+					  					<div class="col-sm-8">
+					  						<div class="row">
+					  							<div class="col-sm-12">
+						  							<a href="users/user126/index.html"><b><span class="user-name">Ashish Tomer</span></b></a>
+						  						</div>
+											</div>
+					  						<div class="row">
+					  							<div class="col-sm-12">
+						  							<table class="table">
+						  								<thead>
+							  								<tr>
+							  									<th><img src="bootstrap/badges/gold.png" alt="gold badge"></th>
+							  									<th><img src="bootstrap/badges/silver.png" alt="gold badge"></th>
+							  									<th><img src="bootstrap/badges/bronze.png" alt="gold badge"></th>
+							  								</tr>
+						  								</thead>
+						  								<tbody>
+						  									<tr>
+						  										<td>1</td>
+						  										<td>1</td>
+						  										<td>2</td>
+						  									</tr>
+						  								</tbody>
+						  							</table>
+						  						</div>
+					  						</div>
+					  					</div>
+					  				</div>
+					  				<div class="row newer-row">
+					  					<div class="col-sm-4">
+					  						<img src="users/user127/divyansh" alt="user image" class="profile-pic"/>
+					  					</div>
+					  					<div class="col-sm-8">
+					  						<div class="row">
+					  							<div class="col-sm-12">
+						  							<a href="users/user127/index.html"><b><span class="user-name">Vijay Kumar</span></b></a>
+						  						</div>
+											</div>
+					  						<div class="row">
+					  							<div class="col-sm-12">
+						  							<table class="table">
+						  								<thead>
+							  								<tr>
+							  									<th><img src="bootstrap/badges/gold.png" alt="gold badge"></th>
+							  									<th><img src="bootstrap/badges/silver.png" alt="gold badge"></th>
+							  									<th><img src="bootstrap/badges/bronze.png" alt="gold badge"></th>
+							  								</tr>
+						  								</thead>
+						  								<tbody>
+						  									<tr>
+						  										<td>2</td>
+						  										<td>0</td>
+						  										<td>1</td>
+						  									</tr>
+						  								</tbody>
+						  							</table>
+						  						</div>
+					  						</div>
+					  					</div>
+					  				</div>
+
+					  				<div class="row newer-row">
+					  					<div class="col-sm-4">
+					  						<img src="users/user128/tarunyadav" alt="user image" class="profile-pic"/>
+					  					</div>
+					  					<div class="col-sm-8">
+					  						<div class="row">
+					  							<div class="col-sm-12">
+						  							<a href="users/user128/index.html"><b><span class="user-name">Tarun Yadav</span></b></a>
+						  						</div>
+											</div>
+					  						<div class="row">
+					  							<div class="col-sm-12">
+						  							<table class="table" style="margin:0px">
+						  								<thead>
+							  								<tr>
+							  									<th><img src="bootstrap/badges/gold.png" alt="gold badge"></th>
+							  									<th><img src="bootstrap/badges/silver.png" alt="gold badge"></th>
+							  									<th><img src="bootstrap/badges/bronze.png" alt="gold badge"></th>
+							  								</tr>
+						  								</thead>
+						  								<tbody>
+						  									<tr>
+						  										<td>2</td>
+						  										<td>0</td>
+						  										<td>1</td>
+						  									</tr>
+						  								</tbody>
+						  							</table>
+						  						</div>
+					  						</div>
+					  					</div>
+					  				</div>
+
+								</div>
+								<div class="tab-pane" id="ideas">
+
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
  	</div>   
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+
 
 	<!-- Scripts added at the end -->
     
     <script src="bootstrap/js/jquery-1.9.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script src="bootstrap/js/bootstrap-select.min.js"></script>
 </body>
 </html>
