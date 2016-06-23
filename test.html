@@ -8,26 +8,44 @@
     <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="bootstrap/css/customize.css">
     <!-- Optional Bootstrap theme goes down-->
+    <style type="text/css">
+    	a:hover{
+    		text-decoration: none;
+    	}
+
+    	ul.navbar-nav li{
+    		padding-top: 4.5%
+    	}
+
+    	ul.navbar-nav li span{
+    		vertical-align:text-middle;
+    		height:35px;
+    		border-radius: 5px;
+    		margin-right: 5px;
+    		background:#fff;
+    		color:#000	
+    	}
+    </style>
 
 </head>
 <body>
 
-<nav class="navbar navbar-default" style="margin-top:0px; padding:0% 2%; border-bottom: 1px solid #e2e2e2 ">
+<nav class="navbar navbar-default" style="padding:0% 2%; border-bottom: 1px solid #e2e2e2 ">
 	<div class="container-fluid">
 		<div class="navbar-header" style="height:70px;" >
 			<a class="navbar-brand" href="index.html"><img src="bootstrap/logo/reaplogo.png" alt="reap home" style="height:33px;"/></a>
 		</div>
 
 		<ul class="nav navbar-nav">
-			<li style="height:70px; padding-top:3.5%; padding-left:2%"><img src="bootstrap/logo/mainheader.png" style="height:33px" class="visible-lg"></li>
+			<li style="padding-top:4.5%; padding-left:2%"><img src="bootstrap/logo/mainheader.png" style="height:33px" class="visible-lg"></li>
 		</ul>
 
 		<ul class="nav navbar-nav navbar-right">
-			<li class="active"><a href="index.html"><img src="bootstrap/icons/dashboard.png"> Dashboard</a></li>
-			<li><a href="#"><img src="bootstrap/icons/badgedarkgrey.png"> Badges</a></li>
-			<li><a href="#"><img src="bootstrap/icons/dashboard.png"> Certificate</a></li>
-			<li><a href="#"><img src="bootstrap/icons/ideadarkgrey.png"> Idea</a></li>
-			<li><a href="#"><img src="bootstrap/icons/belldarkgrey.png"> Notification</a></li>
+			<li class="active"><span style="vertical-align:text-middle; height:35px; border-radius: 5px; padding:15px 5px; background:#505b72; color:#fff"><a href="index.html" style="background:#505b72; color:#fff; font-weight:bold"><img src="bootstrap/icons/dashboardhover.png"> Dashboard</a></span></li>
+			<li><span><a href="#"><img src="bootstrap/icons/badgedarkgrey.png"> Badges</a></span></li>
+			<li><span><a href="#"><img src="bootstrap/icons/dashboard.png"> Certificate</a></span></li>
+			<li><span><a href="#"><img src="bootstrap/icons/ideadarkgrey.png"> Idea</a></span></li>
+			<li><span><a href="#"><img src="bootstrap/icons/belldarkgrey.png"> Notification</a></span></li>
 		</ul>
 	</div>
 
