@@ -2,9 +2,9 @@ body{
 	background:#f1f4f5;
 }
 
-ul.navbar-nav li:hover{
+/*ul.navbar-nav li:hover{
 	color:#fff;
-}
+}*/
 
 ul.navbar-nav li a{
 	margin:5px 1px 0px 1px ;
