@@ -54,7 +54,7 @@ div#recog-heading{
 
 /**
 * Select a newer - input textbox
-*/    	
+*/
 input#newer-txtbx{
 	width:100%;
 	height:30px
@@ -98,15 +98,15 @@ button#menu1:focus{
 }
 
 span.recog-menu-button{
-	float:left; 
-	margin-top:-2px; 
+	float:left;
+	margin-top:-2px;
 	color:grey
 }
 
 span.recog-menu-caret{
-	float:right; 
-	margin-top:7px; 
-	margin-right: -2px; 
+	float:right;
+	margin-top:7px;
+	margin-right: -2px;
 	color:grey;
 }
 /**
@@ -140,14 +140,14 @@ ul.recog-menu li{
 }
 ul.recog-menu li span a{
 	text-decoration:none;
-	color:#000; 
-	line-height:30px; 
+	color:#000;
+	line-height:30px;
 	margin:8px 0px 0px 8px;
 }
 
 
 label#reasonlbl{
-	margin:0px; 
+	margin:0px;
 	height:25px
 }
 
@@ -259,8 +259,8 @@ ul.menu-wall li:hover{
 }
 ul.menu-wall li span a{
 	text-decoration:none;
-	color:#000; 
-	line-height:20px; 
+	color:#000;
+	line-height:20px;
 	margin:8px 0px 0px 8px;
 }
 
@@ -317,4 +317,33 @@ div.tab-content table{
 ul.list-menu{
 	overflow: auto;
 	height: 180px;
+}
+
+/*added by jay*/
+.dropdown-menu>li.user-header>img
+{
+	z-index:5;
+	height:122px;
+	width:122px;
+	border:3px solid;
+	border-color:transparent;
+	border-color:#e9e9e9;
+	float:left;
+}
+
+#user>.dropdown-menu
+{
+	width: 800px !important;
+	height: 350px !important;
+}
+.dropdown-menu>li.user-footer
+{
+	background-color:#f4f4f4;
+}
+#dropdownWidth{
+width:500px;
+}
+
+#dropdownWidth option{
+width:100px;
 }

@@ -17,7 +17,7 @@
     			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
 			        <span class="icon-bar"></span>
 			        <span class="icon-bar"></span>
-			        <span class="icon-bar"></span> 
+			        <span class="icon-bar"></span>
       			</button>
       			</span><a class="navbar-brand" href="#" ><img src="bootstrap/logo/reaplogo.png" style="height:35px; align:center"></a>
     		</div>
@@ -30,8 +30,68 @@
 			      	<li><a href="test.html"><img src="bootstrap/icons/badgedarkgrey.png"></span> Badges</a></li>
 			      	<li><a href="#"><img src="bootstrap/icons/dashboard.png"></span> Certificate</a></li>
 			      	<li><a href="#"><img src="bootstrap/icons/ideadarkgrey.png"></span> Idea</a></li>
-			      	<li><a href="#"><img src="bootstrap/icons/belldarkgrey.png"></span> Notification</a></li>
-			      	<li><a href="#"><span class="glyphicon glyphicon-user"></span> User</a></li>
+<!-- code for notification and drop down -->
+              <li  data-toggle = "dropdown"><a href="#"> <img src="bootstrap/icons/belldarkgrey.png"></span> Notification </a></li>
+              <ul class = "dropdown-menu" role = "menu" aria-labelledby = "dropdownMenu1">
+              <li role = "presentation">
+                  <a role = "menuitem" tabindex = "-1" href = "#">
+                  You have no unread notification
+                </a>
+            </li>
+            <li role = "presentation" class = "divider"></li>
+            <li role = "presentation">
+              <a role = "menuitem" tabindex = "-1" href = "#"><center>View All</center></a>
+            </li>
+          </ul>
+              <div class = "dropdown pull-right">
+                <li class = "btn dropdown-toggle" id = "dropdownMenu12" data-toggle = "dropdown">
+                <img  class='img-rounded' src="users/user127/jay.jpg" width="40px" height="40px">
+                </li>
+                <ul class="dropdown-menu profile" id="dropdownWidth">
+                        <!-- The user image in the menu -->
+                          <h3>User Profile</h3>
+
+                          <li class="user-header">
+                              <img class="img-rounded" alt="User Image" src="users/user127/jay.jpg" id="profilePic">
+                            </li>
+                                        <!-- Menu Body -->
+
+                                        <li class="user-body">
+                                              <div class="col-lg-12 col-md-12">
+                                                  <div class="col-lg-4 col-md-4"><p>Newer Name<span style="float:right">:</span></p>
+                                                  </div>
+                                                  <div class="col-lg-8 col-md-8"><p><strong>Jitender Saini</strong></p></div>
+                                              </div>
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-4 col-md-4"><p>Service Line<span style="float: right">:</span>
+                                                    </p></div>
+                                                    <div class="col-lg-8 col-md-8"><p><strong>TTND-Intern</strong></p></div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-4 col-md-4"><p>Practice<span style="float: right">:</span></p></div>
+                                                    <div class="col-lg-8 col-md-8"><p><strong>Intern</strong></p></div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="col-lg-4 col-md-4"><p>Email-ID<span style="float: right">:</span></p>
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8"><p><strong>jitender.saini@tothenew.com</strong></p></div>
+                                                </div>
+                                        </li>
+
+                                        <li class="user-footer">
+                                            <div class="col-xs-4 text-center pull-left">
+                                                <a href="#" class="btn btn-default btn-flat">Guidelines</a>
+                                            </div>
+                                            <div class="col-xs-4 text-center pull-right">
+                                                <a href="#" class="btn btn-default btn-flat"><img src="bootstrap/icons/logout.png" height="25px" weight="25px">Logout
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
 			    </ul>
 			</div>
   		</div>
@@ -47,8 +107,8 @@
 				  				<div class="panel-heading" id="recog-heading" >
 				  					<img src="bootstrap/icons/badgewhite.png" alt="white badge"/>&nbsp;&nbsp;&nbsp;&nbsp;<b>RECOGNIZE KARMA</b>
 				  				</div>
-				  	
-				
+
+
 					  			<div class="panel-body" >
 							  		<form role="form" action="index.html" method="GET">
 							  			<div class="row" style="padding-left:1%; padding:1%">
@@ -97,7 +157,7 @@
 															    	<span class="recog-menu-button">Select a Karma</span>
 															    	<span class="caret recog-menu-caret"></span>
 															    </button>
-															    
+
 														    	<ul class="dropdown-menu recog-menu" role="menu" >
 															    	<li role="presentation">
 															    		<span>
@@ -381,7 +441,7 @@
 
 			    		</div>
 			    	</div>
-				</div>			
+				</div>
 			    <div class="col-sm-3">
 			    	<div class="row">
 			    		<div class="col-sm-12" style="padding: 0% 5.5%">
@@ -389,7 +449,7 @@
 				  				<div class="panel-heading" id="badges-heading" >
 				  					<img src="bootstrap/icons/badgewhite.png" alt="white badge"/>&nbsp;&nbsp;&nbsp;&nbsp;<b>MY BADGES</b>
 				  				</div>
-				
+
 					  			<div class="panel-body" >
 					  				<div class="row">
 					  					<div class="col-sm-4">
@@ -474,12 +534,12 @@
 					  				</div>
 					  				<div class="row newer-row">
 					  					<div class="col-sm-4">
-					  						<img src="users/user127/divyansh" alt="user image" class="profile-pic"/>
+					  						<img src="users/user127/jay.jpg" alt="user image" class="profile-pic"/>
 					  					</div>
 					  					<div class="col-sm-8">
 					  						<div class="row">
 					  							<div class="col-sm-12">
-						  							<a href="users/user127/index.html"><b><span class="user-name">Vijay Kumar</span></b></a>
+						  							<a href="users/user127/index.html"><b><span class="user-name">Jitender</span></b></a>
 						  						</div>
 											</div>
 					  						<div class="row">
@@ -495,7 +555,7 @@
 						  								<tbody>
 						  									<tr>
 						  										<td>2</td>
-						  										<td>0</td>
+						  										<td>2</td>
 						  										<td>1</td>
 						  									</tr>
 						  								</tbody>
@@ -507,12 +567,12 @@
 
 					  				<div class="row newer-row">
 					  					<div class="col-sm-4">
-					  						<img src="users/user128/tarunyadav" alt="user image" class="profile-pic"/>
+					  						<img src="users/user128/tanay.jpg" alt="user image" class="profile-pic"/>
 					  					</div>
 					  					<div class="col-sm-8">
 					  						<div class="row">
 					  							<div class="col-sm-12">
-						  							<a href="users/user128/index.html"><b><span class="user-name">Tarun Yadav</span></b></a>
+						  							<a href="users/user128/index.html"><b><span class="user-name">Tanay</span></b></a>
 						  						</div>
 											</div>
 					  						<div class="row">
@@ -548,7 +608,7 @@
 				</div>
 			</div>
 		</div>
- 	</div>   
+ 	</div>
 <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/>
 <br/><br/><br/><br/><br/>
@@ -557,7 +617,7 @@
 
 
 	<!-- Scripts added at the end -->
-    
+
     <script src="bootstrap/js/jquery-1.9.1.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
 </body>
