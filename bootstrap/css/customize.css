@@ -2,38 +2,101 @@ body{
 	background:#f1f4f5;
 }
 
-/*ul.navbar-nav li:hover{
-	color:#fff;
-}*/
-
-ul.navbar-nav li a{
-	margin:5px 1px 0px 1px ;
-	color:#000;
-	height:40px;
-	border-radius:5px;
-	padding-bottom:0px;
-	background-color:#fff;
+div.bodywrapper{
+	width:100%;
+	margin:0px;
+	padding:0px;
 }
 
-ul.navbar-nav li a:hover{
-	margin:5px 1px 0px 1px ;
-	color:#fff;
-	height: 40px;
-	height:40px;
-	border-radius:5px;
-	padding-bottom:0px;
-	background-color:#505b72;
-}
+		nav{
+			z-index:1;
+		}
 
-ul.navbar-nav li a span.navtxt{
-	border:1px solid grey;
-	margin-bottom: 10px
-	padding-bottom:10px;
-}
+    	ul.navbar-right button{
+    		background-color: #fff;
+    		border: none;
+    		width:98%;
+    		text-align: left;
+	    	margin:0px 0px 2px;
+    	}
+    	ul.navbar-right button:hover{
+	    	color:#fff;
+	    	background:#505b72;
+	    }
 
-ul.navbar-nav li a span.navtxt{
-	margin-top: -10px;
-}
+	    ul.navbar-right button.active{
+	    	color:#fff;
+	    	background:#505b72;
+	    }
+
+	    ul.navbar-right button.active:hover{
+	    	color:#fff;
+	    	background:#505b72;
+	    }
+
+	    ul.navbar-right button img{
+	    	height:18px;
+	    	margin-bottom:2px;
+	    }
+
+	    ul.navbar-right button.user-profile{
+	    	padding:0px;
+	    	background-color: #fff;
+    		border: none;
+	    }
+
+		ul.navbar-right button.user-profile img{
+	    	margin-bottom:2px;
+	    }
+	   ul.navbar-right button.user-profile:hover{
+	    	padding:0px;
+	    	background-color: #fff;
+	    	color: #000;
+    		border: none;
+	   }
+
+	   ul.navbar-right ul.dropdown-menu{
+	    	color:#000;
+	    	background-color: #fff;
+	    	margin-top: 10px;
+	    }
+
+	   ul.navbar-right ul.dropdown-menu:hover{
+	    	color:#000;
+	    	background-color: #fff;
+	    }
+
+	   ul.navbar-right ul.dropdown-menu table{
+	    	color: #000;
+	    	border: 0px solid grey;
+	    }
+
+	   ul.navbar-right ul.dropdown-menu table td{
+	    	color: #000;
+	    	border: 0px solid #fff;
+	    }
+
+	   ul.navbar-right ul.dropdown-menu table:hover{
+	    	color: #000;
+	    }
+
+	   ul.navbar-right ul.dropdown-menu table td{
+	    	text-align: left;
+	    }
+
+	   ul.navbar-right ul.dropdown-menu div.left-margin-text{
+	    	color:#000;
+	    	font-weight: bold;
+	    	text-align: left;
+	    	margin-bottom: 3px;
+	    	padding-left: 3%;
+	    }
+
+	   ul.navbar-right ul.dropdown-menu button{
+	    	width:90%;
+	    	border:1px solid #505b72;
+	    	text-align: center;
+	    }
 
 /**
 *Panel - Recognization

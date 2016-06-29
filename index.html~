@@ -11,7 +11,91 @@
 
 </head>
 <body style="background:#e2e2e2">
-    
+    <nav class="navbar" style="background:#fff">
+  		<div class="container-fluid">
+    		<div class="navbar-header" style="padding:0px 0px 10px 20px">
+    			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+			        <span class="icon-bar"></span>
+      			</button>
+      			</span><a class="navbar-brand" href="#" ><img src="bootstrap/logo/reaplogo.png" style="height:35px; align:center"></a>
+    		</div>
+    		<div class="collapse navbar-collapse" id="myNavbar">
+			    <ul class="nav navbar-nav visible-lg">
+			      	<li class="active" style="line-height:50px"><img src="bootstrap/logo/mainheader.png" style="height:35px;"></li>
+			    </ul>
+			    <ul class="nav navbar-nav navbar-right">
+			      	<li class="active"><a href="#"><span id="navtxt"><img src="bootstrap/icons/dashboard.png"></span> Dashboard</span></a></li>
+			      	<li><a href="test.html"><img src="bootstrap/icons/badgedarkgrey.png"></span> Badges</a></li>
+			      	<li><a href="#"><img src="bootstrap/icons/dashboard.png"></span> Certificate</a></li>
+			      	<li><a href="#"><img src="bootstrap/icons/ideadarkgrey.png"></span> Idea</a></li>
+<!-- code for notification and drop down -->
+              <li  data-toggle = "dropdown"><a href="#"> <img src="bootstrap/icons/belldarkgrey.png"></span> Notification </a></li>
+              <ul class = "dropdown-menu" role = "menu" aria-labelledby = "dropdownMenu1">
+              <li role = "presentation">
+                  <a role = "menuitem" tabindex = "-1" href = "#">
+                  You have no unread notification
+                </a>
+            </li>
+            <li role = "presentation" class = "divider"></li>
+            <li role = "presentation">
+              <a role = "menuitem" tabindex = "-1" href = "#"><center>View All</center></a>
+            </li>
+          </ul>
+              <div class = "dropdown pull-right">
+                <li class = "btn dropdown-toggle" id = "dropdownMenu12" data-toggle = "dropdown">
+                <img  class='img-rounded' src="users/user127/jay.jpg" width="40px" height="40px">
+                </li>
+                <ul class="dropdown-menu profile" id="dropdownWidth">
+                        <!-- The user image in the menu -->
+                          <h3>User Profile</h3>
+
+                          <li class="user-header">
+                              <img class="img-rounded" alt="User Image" src="users/user127/jay.jpg" id="profilePic">
+                            </li>
+                                        <!-- Menu Body -->
+
+                                        <li class="user-body">
+                                              <div class="col-lg-12 col-md-12">
+                                                  <div class="col-lg-4 col-md-4"><p>Newer Name<span style="float:right">:</span></p>
+                                                  </div>
+                                                  <div class="col-lg-8 col-md-8"><p><strong>Jitender Saini</strong></p></div>
+                                              </div>
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-4 col-md-4"><p>Service Line<span style="float: right">:</span>
+                                                    </p></div>
+                                                    <div class="col-lg-8 col-md-8"><p><strong>TTND-Intern</strong></p></div>
+                                                </div>
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-4 col-md-4"><p>Practice<span style="float: right">:</span></p></div>
+                                                    <div class="col-lg-8 col-md-8"><p><strong>Intern</strong></p></div>
+                                                </div>
+                                                <div class="col-lg-12 col-md-12">
+                                                    <div class="col-lg-4 col-md-4"><p>Email-ID<span style="float: right">:</span></p>
+                                                    </div>
+                                                    <div class="col-lg-8 col-md-8"><p><strong>jitender.saini@tothenew.com</strong></p></div>
+                                                </div>
+                                        </li>
+
+                                        <li class="user-footer">
+                                            <div class="col-xs-4 text-center pull-left">
+                                                <a href="#" class="btn btn-default btn-flat">Guidelines</a>
+                                            </div>
+                                            <div class="col-xs-4 text-center pull-right">
+                                                <a href="#" class="btn btn-default btn-flat"><img src="bootstrap/icons/logout.png" height="25px" weight="25px">Logout
+                                                </a>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+
+
+			    </ul>
+			</div>
+  		</div>
+	</nav>
     <div class="content-fluid">
     	<div id="primewrapper">
 			<div class="row">
@@ -369,7 +453,7 @@
 					  			<div class="panel-body" >
 					  				<div class="row">
 					  					<div class="col-sm-4">
-					  						<img src="users/user126/ashishtomer.jpg" alt="user image" class="profile-pic"/>
+					  						<img src="users/user126/ashishtomer" alt="user image" class="profile-pic"/>
 					  					</div>
 					  					<div class="col-sm-8">
 					  						<div class="row">
